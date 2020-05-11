@@ -1,5 +1,5 @@
 ---
-title: 18F Engineering Practices Guide
+title: SIRIS Engineering Practices Guide
 permalink: /
 ---
 A set of guidelines and best practices for an awesome engineering team
@@ -12,8 +12,8 @@ These documents are structured by topic; under each, we include "Requirement",
 {%include components/tag-requirement.html %} indicates practices that *must* be done for
 regulatory, legal, compliance, or other reasons.
 
-{%include components/tag-standard.html %} signifies practices that have a strong consensus across 18F; they
-should generally be followed to ease the ATO process and make on-boarding
+{%include components/tag-standard.html %} signifies practices that have a strong consensus across SIRIS Academic; they
+should generally be followed to ease the internal sharing and make on-boarding
 simpler.
 
 {%include components/tag-default.html %} practices are safe selections that tend to be used by a large number of our
@@ -26,29 +26,34 @@ they're not widely used enough to be defaults, but are worth considering.
 {%include components/tag-caution.html %} marks approaches that have significant pitfalls or should not be used for
 security/compliance reasons.
 
+{%include components/tag-todo.html %} indicates a point that needs to be documented and/or also implemented
+
+
 _Note: we've adopted the above classifications but not all the topics have been
 updated to use them. Please submit a pull request to recommend particular
 classification for discussion._
 
-* [Front-End Disciplines]({{site.baseurl}}/frontend)
+* [Front-End]({{site.baseurl}}/frontend)
+* [Back-End]({{site.baseurl}}/frontend)
+* [Data Science]({{site.baseurl}}/data-science)
+* [Semantic technologies]({{site.baseurl}}/semantic-technologies)
 * [Third-Party Integrations]({{site.baseurl}}/integrations)
 * [Workflow Best Practices]({{site.baseurl}}/workflow)
 * [Project Setup]({{site.baseurl}}/project-setup)
-* [Architecture Reviews]({{site.baseurl}}/architecture-reviews)
-* [Accessibility Scanning using AccessLint]({{site.baseurl}}/accessibility-scanning)
-* [Feedback Guide]({{site.baseurl}}/people)
-* [Continuous Deployment]({{site.baseurl}}/continuous-deployment)
 * [Datastore Selection Guidance]({{site.baseurl}}/datastore-selection)
-* [Security]({{site.baseurl}}/security)
 * [Code Review]({{site.baseurl}}/code-review)
 * [Development Environments]({{site.baseurl}}/development-environments)
-* [Incident Reports]({{site.baseurl}}/incident-reports)
+* [Reproducible Research]({{site.baseurl}}/reproducible-research)
 
 ### Language Guides
 
 * [Language Selection Guidance]({{site.baseurl}}/language-selection)
 * [JavaScript]({{site.baseurl}}/javascript)
-* [Node.js]({{site.baseurl}}/nodejs)
+* [R]({{site.baseurl}}/r)
 * [Python]({{site.baseurl}}/python)
+* [SPARQL]({{site.baseurl}}/sparql)
+* [Node.js]({{site.baseurl}}/nodejs)
 * [Ruby]({{site.baseurl}}/ruby)
 * [CSS]({{site.baseurl}}/css)
+
+

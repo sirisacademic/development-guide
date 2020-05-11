@@ -36,32 +36,6 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - Has a steep learning curve and is very opinionated, meaning you learn Angular rather than JavaScript.
 
 
-## Backbone
-{%include components/tag-suggestion.html %}
-Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) application design paradigm ([Wikipedia](http://en.wikipedia.org/wiki/Backbone.js)).
-
-#### When to use:
-- A page design that requires dynamic data manipulation on the front end without a server request response, such as a todo app.
-- When a small front-end framework is required due to performance constraints.
-- When the long-term dev maintenance team is unfamiliar with any full frameworks, such as Angular.
-- To use as a wrapper and rest data manipulation library around a view-only framework, such as React.
-- When the dev team is familiar enough with Backbone to know how to write maintainable Backbone code.
-
-#### When not to use:
-- When the JavaScript components don't keep data or manipulate data, in which case Backbone's functionality is too heavy and not specific enough for just view rendering.
-- If there is a strict requirement that the site should work for users that have JavaScript disabled.
-- When another full JavaScript framework is already in use, such as Angular.
-- When working with a data source that is NOT RESTful. Backbone was built for RESTful services, instead see Flux.
-
-#### Pros:
-- Relatively un-opinionated, meaning a lot of freedom in development.
-- Open source, and has an active, large community.
-
-#### Cons:
-- Still requires a lot of boilerplate code (this can be mitigated by pairing with a library like Marionette)
-- Since it has very little structure, inexperienced programmers can easily create unmaintainable code with Backbone.
-- Designed primarily for REST data.
-
 
 ## React
 {%include components/tag-suggestion.html %}
@@ -81,14 +55,17 @@ React (sometimes styled React.js or ReactJS) is an open-source JavaScript librar
 - While open source, is maintained primarily by Facebook.
 
 
-## Flux
+## Redux
 {%include components/tag-suggestion.html %}
-Flux is not a framework, nor is it M**VC. It's a software architecture for
-writing complex single page applications.
+Redux is a predictable state container for JavaScript apps.
+
+It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+
+You can use Redux together with React, or with any other view library. It is tiny (2kB, including dependencies), but has a large ecosystem of addons available.
 
 #### When to use:
 - A complex JavaScript app that requires both viewing and modifying (CRUD) data
-  in a UI rendered on the client. Flux will likely be overkill for apps that
+  in a UI rendered on the client. Redux will likely be overkill for apps that
   don't modify data in any way.
 - When the data service for the front end is REST and/or something besides REST,
   such as Websockets.
@@ -96,19 +73,17 @@ writing complex single page applications.
 
 #### When not to use:
 - Applications that don't require any updating (create, update, delete) of data.
-- When the cost of updating an app's architecture to flux is more than the cost
+- When the cost of updating an app's architecture to Redux is more than the cost
   of writing the software as it exists.
 
 #### Pros:
-- Easily add non-REST services to a front end, in a transparent way.
-- Cleans up complex data flow by using uni-directional data flow.
-- Cleans up complex async behavior and nested callbacks by using an evented
-  system and functionality to wait for data.
-- Can use simple JavaScript objects rather than a complex framework.
-- Easily tie components together in a clean way.
-- Requires little 3rd party software.
-
+- Predictability and simplicity
+- Unidirectional data flow and immutability
+- Separation of data and presentation
+- Extensibility (via middlewares)
+- Popularity and community
+- Tooling support
 #### Cons:
-- More verbose in file and directory structure.
-- Finding best way to use can be difficult for beginners.
-- Can be hard to find a good structure when beginning.
+- Boilerplate (views, action types, action creators, reducers, selectors, …)
+- No out-of-the-box solution for dealing with side-effects (available through middlewares such as redux-thunk or redux-saga)
+- Actions are disconnected from their effect (which is defined in the reducer)

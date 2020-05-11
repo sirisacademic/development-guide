@@ -4,8 +4,8 @@
 #    href: /example/
 
 secondary:
-  - text: More 18F guides
-    href: https://18f.gsa.gov/guides/
+  - text: SIRIS Academic
+    href: http://www.sirisacademic.com
     external: true
 
 # TODO: figure out how to nest links
@@ -14,22 +14,14 @@ css:
     href: /css/
   - text: Architecture
     href: /css/architecture/
-  - text: Documentation
-    href: /css/documentation/
   - text: Frameworks
     href: /css/frameworks/
   - text: Formatting
     href: /css/formatting/
   - text: Inheritance
     href: /css/inheritance/
-  - text: Linting
-    href: /css/linting/
-  - text: Naming
-    href: /css/naming/
   - text: Preprocessors
     href: /css/preprocessors/
-  - text: Specificity
-    href: /css/specificity/
   - text: Units
     href: /css/units/
   - text: Variables
@@ -43,6 +35,8 @@ js:
     href: /javascript/dependencies/
   - text: Frameworks
     href: /javascript/frameworks/
+  - text: Libraries
+    href: /javascript/libraries/
   - text: Style / Linting
     href: /javascript/style/
 

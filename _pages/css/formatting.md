@@ -5,7 +5,7 @@ sidenav: css
 
 # Formatting
 
-We recommend using [Prettier](https://prettier.io), and enabling it in your
+We recommend using {%include components/tag-suggestion.html %}{%include components/tag-todo.html %}[Prettier](https://prettier.io), and enabling it in your
 editor by default. Prettier is an automatic code formatter that will make your
 code format consistent. This way we don't have to argue over how to format our
 code - we just let the tools enforce something! Prettier works with both plain

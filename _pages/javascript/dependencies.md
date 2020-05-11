@@ -10,6 +10,7 @@ The word "dependency" refers to all of the frameworks, libraries, and other tool
 
 It's not needed and should be phased out and replaced by npm. More information can be found here: [Why We Should Stop Using Bower – And How to Do It](http://gofore.com/ohjelmistokehitys/stop-using-bower/).
 
+Have in mind although that some of the projects developed in the past could still be relying on Bower since they are not updated.
 
 ## npm
 {%include components/tag-default.html %} [npm] informally stands for *N*ode *P*ackage *M*anager, and is the package manager node uses. Its usage is very similar to Bower because the latter was inspired by the former.
@@ -21,7 +22,7 @@ It's not needed and should be phased out and replaced by npm. More information c
   - [jQuery]: `npm install --save jquery`
   - [D3]: `npm install --save d3@v3.5.5` (version 3.5.5)
 
-npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments (such as 18F's deployment service, [Cloud Foundry], and other such as [Heroku]) recognize the existence of `package.json` and automatically install dependencies as needed.
+npm installs its dependencies in the `node_modules` directory. Common conventions dictate that `node_modules` should be excluded from source control by adding it to your project's `.gitignore`, primarily because Node.js-friendly environments  recognize the existence of `package.json` and automatically install dependencies as needed.
 
 ### Install npm
 
@@ -36,38 +37,24 @@ To install on MacOSX or linux, follow the instructions on the [nvm site](https:/
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.6/install.sh | bash
 ```
 
-### Safely installing packages from npm
-While npm is generally a safe environment to install code from, there are certain aspects of the system that are vulnerable to dangerous script execution. Luckily there are steps that can be taken to minimize these risks.
 
-It's recommended that developers at 18F follow these guidelines when installing unknown or new packages.
-
-npm allows various hooks to be executed during the install process. These scripts are where potential dangerous scripts can be executed. To limit this it's recommended to:
-
-1. install npm in a manner so sudo is never required. The 18F recommended way of doing this is to [install with nvm](#install-npm).
-1. check which scripts will be run on install by running `npm show $module scripts`.
-  - Each script under `preinstall`, `install`, `postinstall` will be run when installing.
-  - Each script under `postuninstall`, `preuninstall`, `uninstall` will be run on uninstall.
-1. Pull a tarball of the whole package down to check that any scripts run during those steps are safe, `wget http://registry.npmjs.org/$module/-/$module-version.tgz`.
-  - Check any files that are being run as part of the install scripts.
-  - Check that the file in the package are generally what they are supposed to be.
-1. If unsure, install the packages without running any scripts with `npm install $module --ignore-scripts`.
 
 ### Publishing
 #### Scoping a package to the 18F npm org
-18F has an npm organization called [18f](https://www.npmjs.com/org/18f) that is meant to organize permissions and packages related to 18F. As an 18F developer, when publishing a package, you have the choice whether to scope a package to the 18F org or not. Scoped packages will always be prefixed with `@18f/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
+{%include components/tag-todo.html %} Content is here, need to implement what is described below:
+SIRIS has an npm organization called [SIRIS Academic](https://www.npmjs.com/org/sirisacademic) that is meant to organize permissions and packages related to SIRIS. As an SIRIS developer, when publishing a package, you have the choice whether to scope a package to the SIRIS org or not. Scoped packages will always be prefixed with `@sirisacademic/` before their package name and can have their permissions managed by people in the org. More information about scoped packages can be found on the [npm documentation](https://docs.npmjs.com/misc/scope).
 
 ##### Guidance on when to scope a package or not
-- A package *should not* be scoped to 18F if it is not necessary for consumers (either gov or non-gov) of the package to be aware of 18F in order to use it.
-  - Example: The Draft US Web Design Standards are used by many entities outside of 18f and government. A user does not need to know anything about 18F to use the Web Design Standards package.
-- A package *should* be scoped to 18F if its use cases fall mainly inside of 18F.
-  - Example: [@18f/stylelint-rules](https://github.com/18F/stylelint-rules) is scoped to 18f because it's an 18F specific linting configuration that's directly linked to the 18F guides site.
-- A package *should* be scoped to 18f to avoid naming conflicts.
-  - Example: If 18F made a generic front-end accordion to use across 18F sites, it should probably be scoped to `@18f/accordion` to avoid conflicts with all other accordions out there.
+- A package *should not* be scoped to SIRIS Academic if it is not necessary for consumers of the package to be aware of SIRIS Academic in order to use it.
+- A package *should* be scoped to SIRIS if its use cases fall mainly inside of SIRIS.
+  - Example: [@sirisacademic/stylelint-rules](https://github.com/sirisacademic/stylelint-rules) is scoped to SIRIS because it's an SIRIS Academic specific linting configuration that's directly linked to the SIRIS guides site.
+- A package *should* be scoped to SIRIS to avoid naming conflicts.
+  - Example: If SIRIS made a generic front-end accordion to use across SIRIS sites, it should probably be scoped to `@sirisacademic/accordion` to avoid conflicts with all other accordions out there.
 
-##### How to scope a package to 18F
-- Ensure you are part of the 18f npm org and have at least developer rights. This can be found on the [18f org team page](https://www.npmjs.com/org/18f/members).
-  - If you don't have the proper access, ask in #g-frontend or #javascript slack channels and an admin will add you.
-- If the package has not been published to 18f yet, follow the [instructions on npm](https://docs.npmjs.com/getting-started/scoped-packages) for scoped packages.
+##### How to scope a package to SIRIS Academic
+- Ensure you are part of the SIRIS Academic npm org and have at least developer rights. This can be found on the [SIRIS Academic org team page](https://www.npmjs.com/org/sirisacademic/members).
+  - If you don't have the proper access, ask an admin to add you.
+- If the package has not been published to SIRIS Acadmeic yet, follow the [instructions on npm](https://docs.npmjs.com/getting-started/scoped-packages) for scoped packages.
 - If the package has already been published, it currently cannot be scoped, so may need to be renamed. See the [npm documentation on existing packages](https://docs.npmjs.com/orgs/preexisting-packages) for more information.
 
 ##### General tips for publishing
@@ -77,6 +64,10 @@ npm allows various hooks to be executed during the install process. These script
 
 ### Node and the browser
 Using [Node.js] modules in the browser can be either straightforward or convoluted, depending on the project. Some project packages come with browser-ready `.js` files, whereas others require build tools such as [Browserify] or [Webpack] to translate some Node-specific JavaScript so that it can be run in browsers. Visit the #javascript channel on Slack if you need help with these tools.
+
+## Yarn
+{%include components/tag-todo.html %}
+Add content similar to the npm block
 
 ## Manual dependency management
 Many dependencies consist of a single file and can be more easily incorporated simply by copying them into your project. We have some recommendations for how this should be done:
@@ -88,14 +79,3 @@ Many dependencies consist of a single file and can be more easily incorporated s
   cd js/vendor
   curl -O http://code.jquery.com/jquery.min.js
   ```
-
-3. Add these dependencies to version control.
-
-[jQuery]: http://jquery.com/
-[npm]: https://www.npmjs.com/
-[Node.js]: https://nodejs.org/
-[D3]: http://d3js.org/
-[Browserify]: http://browserify.org/
-[Webpack]: http://webpack.github.io/
-[Cloud Foundry]: https://www.cloudfoundry.org/
-[Heroku]: https://www.heroku.com/

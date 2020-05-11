@@ -5,12 +5,15 @@ sidenav: js
 
 # Style / Linting
 
+{%include components/tag-todo.html %}
+To implement the content in some projects.
+
 {%include components/tag-standard.html %}
 We recommend combining [Prettier](https://prettier.io) with the
 [Airbnb JavaScript style guide](https://github.com/airbnb/javascript) plugins
 for [eslint](https://eslint.org).
 
-Maintaining stylistic consistency across 18F's code helps lower the barrier to
+Maintaining stylistic consistency across SIRIS Academic's code helps lower the barrier to
 jumping in and helping with or reviewing other projects because we'll all be
 familiar with reading and working with code that looks similar. Having
 consistent rules for styling also removes generally non-productive discussions

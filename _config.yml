@@ -1,4 +1,4 @@
-title: TTS Engineering Practices Guide
+title: SIRIS Engineering Practices Guide
 
 styles:
   - /assets/css/styles.css
@@ -47,10 +47,10 @@ logoalt: 18F logo
 google_analytics_ua: UA-48605964-19
 
 repo:
-  name: TTS Engineering Practices Guide
+  name: SIRIS Engineering Practices Guide
   description: Main repository
   url: https://github.com/18F/development-guide
 
 back_link:
-  url: "https://18f.gsa.gov/guides/"
-  text: Read more 18F Guides
+  url: "http://www.sirisacademic.com"
+  text: SIRIS Academic website

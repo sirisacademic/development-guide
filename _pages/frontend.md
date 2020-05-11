@@ -1,21 +1,36 @@
 ---
-title: Front-End Disciplines
+title: Front-End
 ---
-# Front-End Disciplines
+# Front-End
 
 ## Related topics
+* [Wireframing]({{site.baseurl}}/wireframing)
 * [CSS]({{site.baseurl}}/css)
 * [JavaScript]({{site.baseurl}}/javascript)
-* [Security]({{site.baseurl}}/security)
 
-## What is front end?
 
-The Front-End Guild did a series of exercises to determine the
-fundamental differences between the front-end design and front-end
-developer roles at 18F. Using [some of our own research
-methods](https://methods.18f.gov), the Front-End Guild came up with
-the following recommendations on knowing the difference between the
-two disciplines:
+## Front-end at SIRIS
+
+Part of the stuff released by SIRIS Academic consist of data-driven tools.
+Among those tools, some of them are web-based, which means we do a lot
+of front end development, so we rely on a toolset consisting on web frameworks
+and related libraries assisting us on data tasks as analysis and visulization.
+
+### Technology agnostic
+We are unbiased towards the use of different technology tools to solve different problems. 
+We believe there is no 'one size fits' all in the website development industry.
+That means that we are not tied to any specific technology stack, instead we look
+for the best technology to solve each specific problem. 
+
+Reason to be technology agnostic is that as of today we are project-based, 
+which means that we tackle different needs and differents problems everytime, so
+it has no sense to be opinionated on using one technology on top of another.
+
+## Roles on Front-end development
+
+Tech crew at SIRIS often wear many hats in terms of technology. However, and for
+clarification purposes, is it good to specify two different disciplines when
+doing front-end development:
 
 **Front-end designers** design, write, and implement the
 presentational code base for websites and applications. They should

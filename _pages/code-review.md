@@ -4,10 +4,6 @@ title: Code Review
 # Code Review
 A friendly guide for reviewing code — and not each other — at 18f.
 
-_Forked from the excellent Consumer Financial Protection Bureau
-[guide](https://github.com/cfpb/front-end/blob/master/code-reviews.md)). 
-Help us continually improve by [submitting an issue](https://github.com/18F/development-guide)._
-
 ## Why reviews?
 
 Code reviews are an incredibly important part of the development process. Our

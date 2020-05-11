@@ -31,8 +31,8 @@ heading:
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: /assets/images/18f-Logo.svg
-    alt: 18F
+  - src: /assets/images/SIRIS Logo RGB-01.png
+    alt: SIRIS Academic
 
 # Configuration for footer contact links
 contact:
