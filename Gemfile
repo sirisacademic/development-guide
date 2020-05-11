@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "github-pages", group: :jekyll_plugins
+
 gem 'uswds-jekyll', :git => 'https://github.com/18F/uswds-jekyll.git'
 
 gem 'html-proofer'
