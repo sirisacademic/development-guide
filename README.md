@@ -1,26 +1,26 @@
-# Technology Transformation Services (TTS) Engineering Practices
+# SIRIS Academic Engineering Practices
 
-[TTS](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) offices and programs — including [18F](https://18f.gsa.gov), [Centers of Excellence](https://coe.gsa.gov) (CoE), [Presidential Innovation Fellows](https://presidentialinnovationfellows.gov) (PIF), and [Solutions](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/tts-solutions) — promote team best practices across specialty areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves.
 
-This repo is where the TTS Engineering Practices Guild keeps its guide to best practices and resources for software development. Documentation is written using [Markdown](https://kramdown.gettalong.org/quickref.html) syntax and published as HTML using the [Jekyll](https://jekyllrb.com) static site generator.
+This repo is where the SIRIS Academic R+D keeps its guide to best practices and resources for software development. Documentation is written using [Markdown](https://kramdown.gettalong.org/quickref.html) syntax and published as HTML using the [Jekyll](https://jekyllrb.com) static site generator.
+
+The guide has been cloned from the excelent [engineering guides from 18f.gov](https://github.com/18F/development-guide)
 
 ## Quicklinks
 
-- Published guide: [engineering.18f.gov](https://engineering.18f.gov)
+- Published guide: [pending](https://engineering.sirisacademic.com)
 - Raw content: [_pages](_pages)
 - [CONTRIBUTING.md](CONTRIBUTING.md) on how to build this guide locally and submitting PRs/issues.
 
-## Our mission
-We believe that government-developed software products should be functional, maintainable, and thoughtfully designed. Our guild helps TTS promote the adoption and advancement of software engineering best practices. In this way, TTS can lead by example while providing effective services that help our partners and customers fulfill their missions.
-To achieve our vision, the Engineering Practices Guild works to:
+## Aims
+This guide is aimed to:
 - Support the continuous learning necessary for successful software engineering work.
-- Provide TTS developers with easy-to-understand, actionable guidance around software engineering best practices.
+- Provide SIRIS members with easy-to-understand, actionable guidance around software engineering best practices.
 - Promote a central knowledge base of shared tools, common patterns, tutorials, and exemplary source code repositories, to help build technical capacity at our partner agencies so that they might better govern their software development efforts.
 - Create a robust and supportive internal environment so that we can, in turn, bolster healthy external communities related to our work.
 
 ## How to track what we're doing, and how you can be involved!
 
-We use issues in this repo to track work. If you'd like to suggest a new topic or flag an issue, please [file an issue](https://github.com/18F/development-guide/issues/new/).
+We use issues in this repo to track work. If you'd like to suggest a new topic or flag an issue, please [file an issue](https://https://github.com/sirisacademic/development-guide/issues/new/).
 
 The software development industry is ever-changing, and our guide is a living document. Please suggest edits or changes via pull request.
 
@@ -33,7 +33,7 @@ To run the site locally, we recommend using:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/18F/development-guide.git
+   git clone https://github.com/sirisacademic/development-guide
    ```
 1. From within the repository directory, run:
 
