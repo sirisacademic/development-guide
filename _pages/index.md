@@ -1,8 +1,8 @@
 ---
-title: SIRIS Engineering Practices Guide
+title: SIRIS R+D Practices Guide
 permalink: /
 ---
-A set of guidelines and best practices for an awesome engineering team
+A set of guidelines and best practices for an awesome research+engineering team
 
 ## How we classify best practices
 
