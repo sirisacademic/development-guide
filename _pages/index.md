@@ -34,13 +34,12 @@ updated to use them. Please submit a pull request to recommend particular
 classification for discussion._
 
 * [Front-End]({{site.baseurl}}/frontend)
-* [Back-End]({{site.baseurl}}/frontend)
+* [Back-End]({{site.baseurl}}/backend)
 * [Data Science]({{site.baseurl}}/data-science)
 * [Semantic technologies]({{site.baseurl}}/semantic-technologies)
 * [Third-Party Integrations]({{site.baseurl}}/integrations)
 * [Workflow Best Practices]({{site.baseurl}}/workflow)
 * [Project Setup]({{site.baseurl}}/project-setup)
-* [Datastore Selection Guidance]({{site.baseurl}}/datastore-selection)
 * [Code Review]({{site.baseurl}}/code-review)
 * [Development Environments]({{site.baseurl}}/development-environments)
 * [Reproducible Research]({{site.baseurl}}/reproducible-research)
@@ -53,7 +52,6 @@ classification for discussion._
 * [Python]({{site.baseurl}}/python)
 * [SPARQL]({{site.baseurl}}/sparql)
 * [Node.js]({{site.baseurl}}/nodejs)
-* [Ruby]({{site.baseurl}}/ruby)
 * [CSS]({{site.baseurl}}/css)
 
 
