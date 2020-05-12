@@ -13,7 +13,7 @@ exclude:
   - go
   - copy-template
 
-theme: uswds-jekyll
+#theme: uswds-jekyll
 
 include: 
   - .rubocop.yml # in _pages/ruby
