@@ -4,9 +4,11 @@ title: Front-End
 # Front-End
 
 ## Related topics
+
 * [Wireframing]({{site.baseurl}}/wireframing)
 * [CSS]({{site.baseurl}}/css)
 * [JavaScript]({{site.baseurl}}/javascript)
+* [Cross-browsing]({{site.baseurl}}/crossbrowsing)
 
 
 ## Front-end at SIRIS
@@ -17,6 +19,7 @@ of front end development, so we rely on a toolset consisting on web frameworks
 and related libraries assisting us on data tasks as analysis and visulization.
 
 ### Technology agnostic
+
 We are unbiased towards the use of different technology tools to solve different problems. 
 We believe there is no 'one size fits' all in the website development industry.
 That means that we are not tied to any specific technology stack, instead we look
