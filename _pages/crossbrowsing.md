@@ -6,7 +6,7 @@ title: Cross-browsing, resolutions and devices
 
 Cross-browser compatibility is the ability of a website or web application to function across different browsers and degrade gracefully when browser features are absent or lacking.
 
-## Tools for crossbrowsing
+## Tools for cross-browsing
 
 {%include components/tag-default.html %}
 Our main tool to test websites and apps in different browsers and devices is [Browser Stack](https://www.browserstack.com/).

@@ -9,6 +9,7 @@ title: Front-End
 * [CSS]({{site.baseurl}}/css)
 * [JavaScript]({{site.baseurl}}/javascript)
 * [Cross-browsing]({{site.baseurl}}/crossbrowsing)
+* [Scaffolded projects]({{site.baseurl}}/frontend-scaffolded)
 
 
 ## Front-end at SIRIS
